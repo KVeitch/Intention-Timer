@@ -1,18 +1,21 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" type="text/css" href="styles.css">
-    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
     <title>Intention Timer</title>
   </head>
   <header>
-     <h1>INTENTION TIMER</h1>
+    <h1>INTENTION TIMER</h1>
   </header>
   <body>
     <div class="heading">
-       <h2 class="new-activities">New Activity</h2>
+      <h2 >New Activity</h2>
     </div>
     <main>
       <section class="timer-container hidden">
@@ -20,51 +23,56 @@
         <p class="motivate hidden">Well Done!</p>
         <div class="input-div">
           <span class="min-sec-counter minute-digits"></span>
-            <div class="clock-colon-div">
-              <div class="dot">
-              </div>
-                <div class="dot">
-                </div>
-              </div>
-           <span class="min-sec-counter second-digits"></span>
-        </div>
-        <button class="start-timer-button">START</button>
-        <button class="log-button invisible">LOG ACTIVITY</button>
-      </section>
-        <div class="new-activity-button-div hidden">
-          <button class="new-activity-button">CREATE A NEW ACTIVITY</button>
-        </div>
-    <section class="activity-section">
-      <h3 class="select-category">Select a category:</h3>
-      <div class="button-div">
-        <button class="study-button">Study</button>
-          <button class="meditate-button">Meditate</button>
-          <button class="exercise-button">Exercise</button>
-      </div>
-      <form>
-          <div class="task-div">
-            <label class="task-label" for="task">What would you like to accomplish during this time?</label> <br>
-            <input class="task-input input"></input>
+          <div class="clock-colon-div">
+            <div class="dot"></div>
+            <div class="dot"></div>
           </div>
-          <span class="start-error hidden"><img class='error' src='assets/warning.svg'> Please fill in all inputs!</span>
-      <section class="min-sec-div">
-        <div class="container1">
-          <label class="time-label" for="minutes">Minutes</label>
-          <input type="number" class="minute-input time-input input"></input>
+          <span class="min-sec-counter second-digits"></span>
         </div>
-        <div class="container2">
-          <label class="time-label" for="seconds">Seconds</label>
-          <input type="number" class="second-input time-input input"></input>
-        </div>
+        <button class="start-timer-btn">START</button>
+        <button class="log-btn invisible">LOG ACTIVITY</button>
       </section>
-      </form>
-      <button class="start-button">START ACTIVITY</button>
-    </section>
-    <section class="right-section">
-      <h2 class="past-activities">Past Activities</h2>
-      <p class="first-prompt">You haven't logged any activities yet.</p>
-      <p class="second-prompt">Complete the form to the left to get started!</p>
-    </section>
+      <div class="new-activity-btn-div hidden">
+        <button class="new-activity-btn">CREATE A NEW ACTIVITY</button>
+      </div>
+      <section class="activity-section">
+        <h3 class="select-category">Select a category:</h3>
+        <div class="button-div">
+          <button class="study-btn">Study</button>
+          <button class="meditate-btn">Meditate</button>
+          <button class="exercise-btn">Exercise</button>
+        </div>
+        <form>
+          <div class="task-div">
+            <label class="task-label" for="task">
+              What would you like to accomplish during this time?
+            </label>
+            <input class="task-input input" />
+          </div>
+          <span hidden class="start-error hidden">
+            <img class="error" src="assets/warning.svg" />
+            Please fill in all inputs!
+          </span>
+          <section class="min-sec-div">
+            <div class="container1">
+              <label class="time-label" for="minutes">Minutes</label>
+              <input type="number" class="minute-input time-input input" />
+            </div>
+            <div class="container2">
+              <label class="time-label" for="seconds">Seconds</label>
+              <input type="number" class="second-input time-input input" />
+            </div>
+          </section>
+        </form>
+        <button class="start-btn">START ACTIVITY</button>
+      </section>
+      <section class="right-section">
+        <h2 class="past-activities">Past Activities</h2>
+        <p class="first-prompt">You haven't logged any activities yet.</p>
+        <p class="second-prompt">
+          Complete the form to the left to get started!
+        </p>
+      </section>
     </main>
     <script src="main.js"></script>
     <script src="activity.js"></script>
