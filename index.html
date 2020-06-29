@@ -35,9 +35,9 @@
         <section class="activity-section">
           <h3 class="select-category">Select a category:</h3>
           <div class="button-div">
-            <button class="study-btn">Study</button>
-            <button class="meditate-btn">Meditate</button>
-            <button class="exercise-btn excercise-selected">Exercise</button>
+            <button class="study-btn btn active" value="study">Study</button>
+            <button class="meditate-btn btn" value="meditate">Meditate</button>
+            <button class="exercise-btn btn" value="exercise">Exercise</button>
           </div>
           <form>
             <div class="task-div">
@@ -71,12 +71,11 @@
         </p>
       </section>
     </main>
-    <main>
- 
-      <div class="new-activity-btn-div hidden">
+    <container class="hidden">
+      <div class="new-activity-btn-div">
         <button class="new-activity-btn">CREATE A NEW ACTIVITY</button>
       </div>
-    </main>
+    </container>
     <script src="activity.js"></script>
     <script src="main.js"></script>
   </body>
