@@ -28,7 +28,7 @@ header {
 main {
   padding: 0% 2%;
   display: grid;
-  grid-template-columns: 65% 35%;
+  grid-template-columns: 65.5% 1fr;
   grid-template-areas:
     'header1 header2'
     'left right';
@@ -40,6 +40,7 @@ main {
   align-items: center;
   height: 8vh;
   padding-top:1%;
+  letter-spacing:-1.4px;
 }
 .main__left__header {
   grid-area: 'header1';
@@ -47,7 +48,7 @@ main {
 
 .main__right__header {
   grid-area: 'header2';
-  padding-left: 2%;
+  padding-left: 6%;
 }
 
 .main__right__header,
@@ -57,29 +58,37 @@ main {
 
 .main__section__left {
   grid-area: 'left';
-  background-color: #46424d;
-  margin-right: 2%;
-  padding: 5%;
+  border-radius:5px;
+  background-color: rgba(70, 66, 77,.5);
+  margin-right: 3%;
+  padding: 5% 12.5%;
+  height:80vh;
+  min-height: 100%;
 }
 .button-div {
   width: 100%;
+  margin:2.2vh 0 7vh 0;
   display: flex;
   justify-content: space-between;
 }
 
 .button-div button {
   width: 155px;
-  height: 85px;
+  height: 65px;
   background-position: center top;
   background-size: 25px;
-  padding-top: 15px;
   border: 1px solid #fff;
   border-radius: 3px;
-  background-color: #46424d;
+  -webkit-border-radius: 3px;
+  background-color: rgba(70, 66, 77,.5);
   font-size: 18px;
-  padding-top: 18px;
+  padding: 9px 0 6px 0;
   color: #fff;
+  text-decoration:none;
   cursor: pointer;
+  display:flex;
+  justify-content: center;
+  align-items: flex-end;
 }
 
 .study-btn {
@@ -101,9 +110,14 @@ main {
 }
 
 input {
-  background-color: #46424d;
+  background-color: rgba(70, 66, 77,.5);
   font-size: 14px;
   border-bottom:1px solid #cbc9cf
+}
+
+.task-label {
+  font-weight: 400;
+
 }
 
 .task-input {
@@ -119,6 +133,13 @@ label {
 .main__section__right {
   grid-area: 'right';
   padding: 2%;
+  text-align: center;
+  line-height: 1.9em;
+}
+
+.main__section__right p {
+  letter-spacing: -.5px;
+  margin-left:5px;
 }
 
 study-selected {
