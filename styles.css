@@ -10,10 +10,10 @@
 body {
   color: #cbc9cf;
   background-color: #2b2733;
-  background-image: url('./DOCS/CompImages/zero-state-desktop.png');
+  /* background-image: url('./DOCS/CompImages/zero-state-desktop.png');
   background-repeat: no-repeat;
   background-size: 100%;
-  background-origin: content-box;
+  background-origin: content-box; */
 }
 
 header {
@@ -59,7 +59,7 @@ main {
 .main__section__left {
   grid-area: 'left';
   border-radius:5px;
-  background-color: rgba(70, 66, 77,.5);
+  background-color: rgba(70, 66, 77,1);
   margin-right: 3%;
   padding: 5% 12.5%;
   height:80vh;
@@ -80,7 +80,7 @@ main {
   border: 2px solid #CBC9CF;
   border-radius: 3px;
   -webkit-border-radius: 3px;
-  background-color: rgba(70, 66, 77,.5);
+  background-color: rgba(70, 66, 77,1);
   font-size: 18px;
   padding: 9px 0 6px 0;
   color: #CBC9CF;
@@ -110,7 +110,7 @@ main {
 }
 
 input {
-  background-color: rgba(70, 66, 77,.5);
+  background-color: rgba(70, 66, 77,1);
   font-size: 1.2em;
   min-height: 1.5em;
   border-bottom:1px solid #cbc9cf;
@@ -194,3 +194,5 @@ label {
 .hidden {
   display:none;
 }
+
+button:focus {outline:0;}
