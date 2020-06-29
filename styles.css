@@ -183,7 +183,7 @@ label {
   background-origin: content-box;
 }
 
-.button-div .excercise-selected {
+.button-div .exercise-selected {
   border:2px solid #FD8078;
   color:#FD8078;
   background-image: url('./assets/exercise-active.svg');
