@@ -53,7 +53,7 @@ main {
 
 .main__right__header,
 .main__section__right {
-  border-left: 2px solid  #46424d
+  border-left: 3px solid  #46424d
 }
 
 .main__section__left {
@@ -77,13 +77,13 @@ main {
   height: 65px;
   background-position: center top;
   background-size: 25px;
-  border: 1px solid #fff;
+  border: 2px solid #CBC9CF;
   border-radius: 3px;
   -webkit-border-radius: 3px;
   background-color: rgba(70, 66, 77,.5);
   font-size: 18px;
   padding: 9px 0 6px 0;
-  color: #fff;
+  color: #CBC9CF;
   text-decoration:none;
   cursor: pointer;
   display:flex;
@@ -111,24 +111,38 @@ main {
 
 input {
   background-color: rgba(70, 66, 77,.5);
-  font-size: 14px;
-  border-bottom:1px solid #cbc9cf
+  font-size: 1.2em;
+  min-height: 1.5em;
+  border-bottom:1px solid #cbc9cf;
+  color: #cbc9cf;
 }
-
-.task-label {
-  font-weight: 400;
-
+.input:focus {
+  outline: none !important;
 }
 
 .task-input {
   width: 100%;
-  font-size: 24px;
   margin-top: 2%;
 }
 
 label {
-  color: #fff;
-  margin-bottom: 13%;
+  font-size: 1.1em;
+}
+
+.min-sec-div{
+  display:flex;
+  justify-content: space-between;
+  margin-top:7.5vh
+}
+
+.minutes, .seconds {
+  display:flex;
+  flex-direction: column;
+  width:43%;
+  margin-bottom:2vh;
+}
+.time-input{
+  padding:8px;
 }
 .main__section__right {
   grid-area: 'right';
@@ -142,13 +156,39 @@ label {
   margin-left:5px;
 }
 
-study-selected {
+.start-btn{
+  color: #46424D;
+  background-color: #CBC9CF;
+  border-radius: 4px;
+  width: 32%;
+  margin-left: 66.5%;
+  margin-top: 6.5%;
+  height: 35px;
+  font-size: 90%;
 }
 
-meditate-selected {
+.button-div .study-selected {
+  border:2px solid #B3FD78;
+  color:#B3FD78;
+  background-image: url('./assets/study-active.svg');
+  background-repeat: no-repeat;
+  background-origin: content-box;
 }
 
-excersize-selected {
+.button-div .meditate-selected {
+  border:2px solid #C278FD;
+  color:#C278FD;
+  background-image: url('./assets/meditate-active.svg');
+  background-repeat: no-repeat;
+  background-origin: content-box;
+}
+
+.button-div .excercise-selected {
+  border:2px solid #FD8078;
+  color:#FD8078;
+  background-image: url('./assets/exercise-active.svg');
+  background-repeat: no-repeat;
+  background-origin: content-box;
 }
 
 .hidden {
